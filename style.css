@@ -180,10 +180,18 @@ nav {
 }
 
 .hero h1 {
+  /*exists for search engines but hidden for style*/
+  display: none;
   font-size: 3rem;
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 2rem;
+}
+#logo {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 1rem auto 2rem 5rem;
 }
 .hero h2 {
   padding-left: 5rem;
