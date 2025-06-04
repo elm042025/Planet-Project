@@ -12,7 +12,124 @@ body {
   color: #dedede;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.747);
 }
+/* Styling for Alex sine seksjoner */
+/* planets section that contains all 8 planets/articles */
+.planets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+article {
+  margin: 10px;
+  padding: 10px;
+}
+/* footer */
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(30, 30, 30);
+  color: white;
+  text-align: center;
+}
+/* In the credits html page, a section with the ID credits */
+#credits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* hero */
+#hero {
+  /* Put the margin bottom to be large so that all the planets show up beneath the background image */
+  margin-bottom: 15rem;
+}
+#earth {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  justify-content: start;
+  align-items: start;
+  gap: 3rem;
+}
+#jupiter {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  justify-content: start;
+  align-items: start;
+  gap: 3rem;
+}
+#neptune {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  justify-content: start;
+  align-items: start;
+  gap: 3rem;
+}
+#mercury {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  justify-content: start;
+  align-items: start;
+  gap: 3rem;
+}
+#mars {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  justify-content: start;
+  align-items: start;
+  gap: 3rem;
+}
+#venus {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  justify-content: start;
+  align-items: start;
+  gap: 3rem;
+}
+#saturn {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  justify-content: start;
+  align-items: start;
+  gap: 3rem;
+}
+#uranus {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  justify-content: start;
+  align-items: start;
+  gap: 3rem;
+}
+/*  planet is class for img based styling for the image of a planet */
+.planet {
+  width: 50svw;
+  height: 70svh;
+  margin: 10px;
+  padding: 10px;
+}
+/* kolonne class for elementer inni en planet seksjon */
+.kolonne {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+/* video styling */
+video {
+  max-width: 40svw;
+  margin-top: 15px;
+}
 
+/* Slutten på styling for Alex  */
 /* Header/nav */
 header {
   position: sticky;
