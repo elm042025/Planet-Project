@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pathway Extreme", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(2, 2, 2);
+  color: #dedede;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.747);
+}
+
+/* Header/nav */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 4rem;
+  background-color: rgb(0, 0, 0);
+}
+
+/* sun and planets images nav link */
+
+.nav-planet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #dedede;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+.nav-planet:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+.nav-planet:hover span {
+  padding: 0.125rem 0.25rem;
+  background-color: #303030;
+  border-radius: 10px;
+  color: #dedede;
+}
+
+/* Main */
+/* Hero section */
+
+.hero-background {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.825),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0)
+    ),
+    url(./images/Galaxy\ background-2\ unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.hero h2 {
+  padding-left: 5rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.hero p {
+  padding-left: 5rem;
+  display: inline-block;
+  width: 45%;
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+}
+
+/*planet section styles, each section is split in to divs, left and right side*/
+
+.planet-section {
+  /* background-image: url(./images/stars\ section\ background.jpg); */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.planet-section .left-side,
+.planet-section .right-side {
+  /* border: solid 1px #dedede; */
+  width: 40%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+
+/* left side style*/
+
+.left-side img {
+  width: 70%;
+  height: auto;
+  align-self: center;
+}
+.left-side p {
+  font-size: 1.2rem;
+}
+.left-side a {
+  background-color: #dedede;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  color: black;
+  padding: 0.5rem 1rem;
+  text-shadow: none;
+  align-self: center;
+}
+.left-side a:hover {
+  background-color: #303030;
+  color: #dedede;
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+#back-to-top {
+  padding: 0;
+  margin: 5px 0;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: end;
+  color: #dedede;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+#back-to-top img {
+  width: 36px;
+  height: 36px;
+}
+
+/*right side style*/
+.right-side h3 {
+  font-size: 3rem;
+  padding-left: 2rem;
+}
+.right-side h4 {
+  font-size: 1.5rem;
+  padding-left: 2rem;
+}
+.right-side ul {
+  font-size: 1.2rem;
+  padding-left: 2rem;
+  list-style-position: inside;
+  list-style-type: disc;
+}
+.right-side ul li {
+  margin-bottom: 0.5rem;
+}
+
+.planet-section video {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  width: 100%;
+  height: fit-content;
+  background-color: rgb(0, 0, 0);
+  color: #dedede;
+  text-align: center;
+  padding: 1rem;
+}
