@@ -16,7 +16,7 @@ body {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.747);
 }
 /* Styling for Alex sine seksjoner */
-/* planets section that contains all 4 planets/articles */
+/* planets section that contains all 4 planets/articles that Alex is responsibel for*/
 .planets {
   display: flex;
   flex-direction: column;
@@ -84,6 +84,12 @@ body {
 }
 
 /*  planet is class for img based styling for the image of a planet */
+.planet-earth {
+  width: 40svw;
+  height: 70svh;
+  margin: 10px;
+  padding: 10px;
+}
 .planet {
   width: 50svw;
   height: 70svh;
