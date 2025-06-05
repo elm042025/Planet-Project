@@ -213,6 +213,10 @@ nav {
   margin-bottom: 4rem;
 }
 
+#iframe-hint {
+  color: #c9e7ea;
+}
+
 /*planet section styles, each section is split in to divs, left and right side*/
 
 .planet-section {
