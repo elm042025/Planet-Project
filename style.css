@@ -271,6 +271,7 @@ nav {
   padding: 0.5rem 1rem;
   text-shadow: none;
   align-self: center;
+  margin-top: 0.5rem;
 }
 .left-side a:hover {
   background-color: #303030;
