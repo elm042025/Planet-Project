@@ -162,9 +162,10 @@ nav {
 }
 .nav-planet:hover span {
   padding: 0rem 0.75rem;
-  background-color: #303030;
+  background-color: #e79940;
   border-radius: 10px;
-  color: #dedede;
+  color: #000000;
+  text-shadow: none;
 }
 
 /* Main */
