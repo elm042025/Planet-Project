@@ -9,13 +9,12 @@ html {
 body {
    min-height: 110vh;
    overflow-x: hidden;
-   background-color: rgb(2, 2, 2);
-   color: #dedede;
-   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.747);
+   background-color: rgb(10, 10, 10);
+   color: rgb(240, 240, 240);
+   text-shadow: 2px 2px 2px rgb(15, 15, 15);
    font-family: "Pathway Extreme", sans-serif;
 }
 
-/* Header/nav */
 header {
    position: sticky;
    top: 0;
@@ -26,24 +25,22 @@ nav {
    height: fit-content;
    display: flex;
    justify-content: space-between;
-   background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+   background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.5));
    backdrop-filter: blur(1px);
    padding: 0.5rem 1rem;
 }
 
 nav a img {
-   width: 3rem;
+   width: 4rem;
    height: auto;
 }
-
-/* sun and planets images nav link */
 
 .nav-planet {
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: space-between;
-   color: #dedede;
+   color: rgb(240, 240, 240);
    text-decoration: none;
    transition: transform 0.3s ease;
 }
@@ -56,27 +53,22 @@ nav a img {
    padding: 0rem 0.75rem;
    background-color: #e79940;
    border-radius: 10px;
-   color: #000000;
+   color: #101010;
    text-shadow: none;
 }
 
-/* Main */
-/* Hero section */
-
 .hero-background {
-   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.825), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(./images/Galaxy\ background-2\ unsplash.jpg);
+   background-image: radial-gradient(rgba(15, 15, 15, 0.503), rgba(0, 0, 0, 0)), url(./images/Galaxy\ background-2\ unsplash.jpg);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
    width: 100%;
-   height: 100vh;
+   height: 90vh;
 }
-
-#hero {
-   margin-top: 2rem;
+.hero {
+   padding-top: 5rem;
 }
 .hero h1 {
-   /*exists for search engines but hidden for style*/
    display: none;
    font-size: 3rem;
    text-align: center;
@@ -93,7 +85,7 @@ nav a img {
 .hero h2 {
    padding-left: 5rem;
    font-size: 1.5rem;
-   margin-bottom: 2rem;
+   margin: 2rem 0;
 }
 .hero p {
    padding-left: 5rem;
@@ -104,24 +96,27 @@ nav a img {
 }
 
 #iframe-hint {
-   color: #c9e7ea;
+   color: #f6f6f6;
 }
 
-/*planet section styles, each section is split in to divs, left and right side*/
-
+.planets {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
 .planet-section {
-   /* background-image: url(./images/stars\ section\ background.jpg); */
-   width: 100vw;
+   width: 90vw;
    height: 100vh;
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
    align-items: center;
+   position: relative;
 }
 
 .planet-section .left-side,
 .planet-section .right-side {
-   /* border: solid 1px #dedede; */
    width: 40%;
    height: 80%;
    display: flex;
@@ -129,8 +124,6 @@ nav a img {
    justify-content: space-around;
    align-items: start;
 }
-
-/* left side style*/
 
 .left-side img {
    width: 70%;
@@ -164,19 +157,18 @@ nav a img {
    display: flex;
    flex-direction: column;
    align-items: center;
-   align-self: end;
+   gap: 0.5rem;
    color: #dedede;
-   position: fixed;
-   bottom: 50px;
+   position: absolute;
+   bottom: 20px;
    right: 50px;
 }
 
 #back-to-top img {
-   width: 36px;
-   height: 36px;
+   width: 2.5rem;
+   height: 2.5rem;
 }
 
-/*right side style*/
 .right-side h3 {
    font-size: 3rem;
    padding-left: 2rem;
@@ -205,12 +197,3 @@ iframe {
    height: 90vh;
    border: none;
 }
-
-/* footer {
-  width: 100%;
-  height: fit-content;
-  background-color: rgb(0, 0, 0);
-  color: #dedede;
-  text-align: center;
-  padding: 1rem;
-} */
