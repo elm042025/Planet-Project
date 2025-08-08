@@ -7,12 +7,16 @@ html {
    scroll-behavior: smooth;
 }
 body {
-   min-height: 110vh;
+   min-height: 100vh;
    overflow-x: hidden;
    background-color: rgb(10, 10, 10);
    color: rgb(240, 240, 240);
    text-shadow: 2px 2px 2px rgb(15, 15, 15);
    font-family: "Pathway Extreme", sans-serif;
+}
+
+hr {
+   width: 100%;
 }
 
 header {
@@ -26,8 +30,8 @@ nav {
    display: flex;
    justify-content: space-between;
    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.5));
-   backdrop-filter: blur(1px);
-   padding: 0.5rem 1rem;
+   backdrop-filter: blur(2px);
+   padding: 0.5rem 5rem;
 }
 
 nav a img {
@@ -44,15 +48,19 @@ nav a img {
    text-decoration: none;
    transition: transform 0.3s ease;
 }
+.nav-planet span {
+   padding: 0 0.5rem;
+   border-radius: 8px;
+}
 
 .nav-planet:hover {
-   transform: scale(1.1);
-   transition: 0.3s ease;
+   transform: scale(1.2) translateY(0.5rem);
+   transition: 0.2s ease-in-out;
 }
 .nav-planet:hover span {
-   padding: 0rem 0.75rem;
-   background-color: #e79940;
-   border-radius: 10px;
+   padding: 0 0.5rem;
+   background-color: #fffe9e;
+   border-radius: 8px;
    color: #101010;
    text-shadow: none;
 }
@@ -77,10 +85,9 @@ nav a img {
 }
 
 #logo {
-   width: 200px;
+   width: 10rem;
    height: auto;
-   display: block;
-   margin: 1rem auto 2rem 5rem;
+   margin-left: 5rem;
 }
 .hero h2 {
    padding-left: 5rem;
@@ -97,6 +104,7 @@ nav a img {
 
 #iframe-hint {
    color: #f6f6f6;
+   text-shadow: 2px 2px 2px #0f0f0f;
 }
 
 .planets {
@@ -106,53 +114,77 @@ nav a img {
    align-items: center;
 }
 .planet-section {
-   width: 90vw;
+   width: 100vw;
    height: 100vh;
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
    align-items: center;
    position: relative;
+   padding: 5rem;
 }
-
-.planet-section .left-side,
-.planet-section .right-side {
-   width: 40%;
-   height: 80%;
+.planet-section {
+   background-image: radial-gradient(rgba(15, 15, 15, 0.873), rgba(0, 0, 0, 0.832)),
+      url(./images/milky-way-stars-starfield-backgrounds-textures-8a9bbb-1024.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.left-side,
+.right-side {
+   height: 90%;
+   width: 45%;
    display: flex;
    flex-direction: column;
-   justify-content: space-around;
-   align-items: start;
+   justify-content: center;
 }
 
-.left-side img {
-   width: 70%;
-   height: auto;
-   align-self: center;
+.left-side {
+   align-items: flex-start;
+   gap: 1rem;
+}
+.left-side h3 {
+   font-size: 3rem;
+}
+.left-side h4 {
+   font-size: 1.5rem;
+}
+.left-side ul {
+   font-size: 1.2rem;
+   list-style-position: inside;
+   list-style-type: disc;
+}
+.left-side ul li {
+   margin-bottom: 0.5rem;
 }
 .left-side p {
    font-size: 1.2rem;
+   line-height: 1.6;
 }
 .left-side a {
-   background-color: #dedede;
+   background-color: #f6f6f6;
    text-decoration: none;
    border-radius: 1.5rem;
    color: black;
    padding: 0.5rem 1rem;
    text-shadow: none;
-   align-self: center;
-   margin-top: 0.5rem;
+   margin-top: auto;
 }
 .left-side a:hover {
-   background-color: #303030;
-   color: #dedede;
-   transform: scale(1.1);
+   background-color: #fffe9e;
+   color: #0f0f0f;
+   transform: scale(1.05);
    transition: 0.3s ease-in-out;
 }
 
+.planet-section video {
+   width: 100%;
+   height: auto;
+   /* border: 1px solid rgba(94, 94, 94, 0.404); */
+   border-radius: 1rem;
+   box-shadow: 1px 1px 4px #2b2e35;
+}
+
 #back-to-top {
-   padding: 0;
-   margin: 5px 0;
    background-color: rgba(0, 0, 0, 0);
    display: flex;
    flex-direction: column;
@@ -160,40 +192,24 @@ nav a img {
    gap: 0.5rem;
    color: #dedede;
    position: absolute;
-   bottom: 20px;
+   bottom: 50px;
    right: 50px;
+   text-decoration: none;
 }
 
 #back-to-top img {
    width: 2.5rem;
    height: 2.5rem;
 }
-
-.right-side h3 {
-   font-size: 3rem;
-   padding-left: 2rem;
-}
-.right-side h4 {
-   font-size: 1.5rem;
-   padding-left: 2rem;
-}
-.right-side ul {
-   font-size: 1.2rem;
-   padding-left: 2rem;
-   list-style-position: inside;
-   list-style-type: disc;
-}
-.right-side ul li {
-   margin-bottom: 0.5rem;
-}
-
-.planet-section video {
-   width: 100%;
-   height: auto;
-}
-
 iframe {
-   width: 90vw;
-   height: 90vh;
-   border: none;
+   width: 100vw;
+   height: 100vh;
+}
+footer {
+   display: flex;
+   justify-content: space-between;
+   padding: 0.5rem 2rem;
+}
+footer a {
+   color: #dedede;
 }

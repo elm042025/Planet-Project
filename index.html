@@ -10,10 +10,6 @@
          rel="stylesheet"
          href="style.css"
       />
-      <script
-         src="script.js"
-         defer
-      ></script>
       <link
          rel="preconnect"
          href="https://fonts.googleapis.com"
@@ -35,17 +31,18 @@
       <header>
          <nav class="top-nav">
             <a
-               href="#sun"
-               class="nav-sun"
+               href="#solar-system-model"
+               class="nav-planet"
                ><img
-                  src="./gpt planet pngs/sun.png"
+                  src="./gpt planet pngs 96x96/solar-system.png"
                   alt="sun"
-            /></a>
+               /><span>3D model</span></a
+            >
             <a
                href="#mercury"
                class="nav-planet"
                ><img
-                  src="./gpt planet pngs/mercury.png"
+                  src="./gpt planet pngs 96x96/mercury.png"
                   alt="Mercury"
                /><span>Mercury</span></a
             >
@@ -53,7 +50,7 @@
                href="#venus"
                class="nav-planet"
                ><img
-                  src="./gpt planet pngs/venus.png"
+                  src="./gpt planet pngs 96x96/venus.png"
                   alt="Venus"
                /><span>Venus</span></a
             >
@@ -61,7 +58,7 @@
                href="#earth"
                class="nav-planet"
                ><img
-                  src="./gpt planet pngs/earth.png"
+                  src="./gpt planet pngs 96x96/earth.png"
                   alt="Earth"
                /><span>Earth</span></a
             >
@@ -69,7 +66,7 @@
                href="#mars"
                class="nav-planet"
                ><img
-                  src="./gpt planet pngs/mars.png"
+                  src="./gpt planet pngs 96x96/mars.png"
                   alt="Mars"
                /><span>Mars</span></a
             >
@@ -77,7 +74,7 @@
                href="#jupiter"
                class="nav-planet"
                ><img
-                  src="./gpt planet pngs/jupiter.png"
+                  src="./gpt planet pngs 96x96/jupiter.png"
                   alt="Jupiter"
                /><span>Jupiter</span></a
             >
@@ -85,7 +82,7 @@
                href="#saturn"
                class="nav-planet"
                ><img
-                  src="./gpt planet pngs/saturn.png"
+                  src="./gpt planet pngs 96x96/saturn.png"
                   alt="Saturn"
                /><span>Saturn</span></a
             >
@@ -93,7 +90,7 @@
                href="#uranus"
                class="nav-planet"
                ><img
-                  src="./gpt planet pngs/uranus.png"
+                  src="./gpt planet pngs 96x96/uranus.png"
                   alt="Uranus"
                /><span>Uranus</span></a
             >
@@ -101,7 +98,7 @@
                href="#neptune"
                class="nav-planet"
                ><img
-                  src="./gpt planet pngs/neptun.png"
+                  src="./gpt planet pngs 96x96/neptun.png"
                   alt="Neptune"
                /><span>Neptune</span></a
             >
@@ -140,10 +137,14 @@
                class="planet-section"
             >
                <div class="left-side">
-                  <img
-                     src="./gpt planet pngs/mercury.png"
-                     alt="Mercury"
-                  />
+                  <h3>Mercury</h3>
+                  <h4>The Swift Planet</h4>
+                  <ul>
+                     <li>Moons: 0</li>
+                     <li>Avg. Temp: -173 to 427°C</li>
+                     <li>Day Length: ~59 Earth days</li>
+                     <li>Surface: Rocky, heavily cratered</li>
+                  </ul>
                   <p>
                      Mercury is the closest planet to the Sun and the smallest in our solar system. It's a rocky planet with a heavily cratered surface and has
                      no moons. Mercury’s days are longer than its years, and it experiences extreme temperature changes.
@@ -154,6 +155,15 @@
                      class="btn"
                      >More about Mercury here</a
                   >
+               </div>
+               <div class="right-side">
+                  <div class="video-wrapper">
+                     <video
+                        src="https://images-assets.nasa.gov/video/GSFC_20160601_Mercury_m12268_Transit/GSFC_20160601_Mercury_m12268_Transit~small.mp4"
+                        controls
+                        poster="./gpt planet pngs 1024x1024/mercury.png"
+                     ></video>
+                  </div>
                   <a
                      href="#top"
                      id="back-to-top"
@@ -164,21 +174,6 @@
                      />Back to top
                   </a>
                </div>
-               <div class="right-side">
-                  <h3>Mercury</h3>
-                  <h4>The Swift Planet</h4>
-                  <ul>
-                     <li>Moons: 0</li>
-                     <li>Avg. Temp: -173 to 427°C</li>
-                     <li>Day Length: ~59 Earth days</li>
-                     <li>Surface: Rocky, heavily cratered</li>
-                  </ul>
-                  <video
-                     src="https://images-assets.nasa.gov/video/GSFC_20160601_Mercury_m12268_Transit/GSFC_20160601_Mercury_m12268_Transit~small.mp4"
-                     controls
-                     poster="./images/mercury-poster-unsplash.jpg"
-                  ></video>
-               </div>
             </section>
             <hr />
             <section
@@ -186,10 +181,14 @@
                class="planet-section"
             >
                <div class="left-side">
-                  <img
-                     src="./gpt planet pngs/venus.png"
-                     alt="Venus"
-                  />
+                  <h3>Venus</h3>
+                  <h4>The Hottest Planet</h4>
+                  <ul>
+                     <li>Moons: 0</li>
+                     <li>Avg. Temp: 462°C</li>
+                     <li>Day Length: ~243 Earth days</li>
+                     <li>Surface: Rocky, volcanic, thick cloud cover</li>
+                  </ul>
                   <p>
                      Venus is the second planet from the Sun and is similar in size to Earth. It's covered in thick, toxic clouds and is the hottest planet in
                      our solar system due to its runaway greenhouse effect. Venus rotates in the opposite direction to most planets.
@@ -200,31 +199,23 @@
                      class="btn"
                      >More about Venus here</a
                   >
-                  <a
-                     href="#top"
-                     id="back-to-top"
-                  >
-                     <img
-                        src="./logo & icons/up-arrow.png"
-                        alt="up arrow"
-                     />Back to top
-                  </a>
                </div>
                <div class="right-side">
-                  <h3>Venus</h3>
-                  <h4>The Hottest Planet</h4>
-                  <ul>
-                     <li>Moons: 0</li>
-                     <li>Avg. Temp: 462°C</li>
-                     <li>Day Length: ~243 Earth days</li>
-                     <li>Surface: Rocky, volcanic, thick cloud cover</li>
-                  </ul>
                   <video
                      src="https://images-assets.nasa.gov/video/NASA's%20Return%20to%20Venus/NASA's%20Return%20to%20Venus~small.mp4"
                      controls
-                     poster="./images/venus-poster-unsplash.jpg"
+                     poster="./gpt planet pngs 1024x1024/venus.png"
                   ></video>
                </div>
+               <a
+                  href="#top"
+                  id="back-to-top"
+               >
+                  <img
+                     src="./logo & icons/up-arrow.png"
+                     alt="up arrow"
+                  />Back to top
+               </a>
             </section>
             <hr />
             <section
@@ -232,10 +223,14 @@
                class="planet-section"
             >
                <div class="left-side">
-                  <img
-                     src="./gpt planet pngs/earth.png"
-                     alt="Earth"
-                  />
+                  <h3>Earth</h3>
+                  <h4>Our Blue Planet</h4>
+                  <ul>
+                     <li>Moons: 1 (The Moon)</li>
+                     <li>Avg. Temp: -88 to 58°C</li>
+                     <li>Day Length: 24 hours</li>
+                     <li>Surface: 71% water, varied landforms</li>
+                  </ul>
                   <p>
                      Earth is the third planet from the Sun and the only known planet to support life. It has one moon, a protective atmosphere, and a surface
                      covered with water and diverse landforms. Earth's dynamic climate and ecosystems make it unique.
@@ -246,31 +241,23 @@
                      class="btn"
                      >More about Earth here</a
                   >
-                  <a
-                     href="#top"
-                     id="back-to-top"
-                  >
-                     <img
-                        src="./logo & icons/up-arrow.png"
-                        alt="up arrow"
-                     />Back to top
-                  </a>
                </div>
                <div class="right-side">
-                  <h3>Earth</h3>
-                  <h4>Our Blue Planet</h4>
-                  <ul>
-                     <li>Moons: 1 (The Moon)</li>
-                     <li>Avg. Temp: -88 to 58°C</li>
-                     <li>Day Length: 24 hours</li>
-                     <li>Surface: 71% water, varied landforms</li>
-                  </ul>
                   <video
                      src="https://images-assets.nasa.gov/video/GSFC_20170412_Lights_m12573_EarthAtNight/GSFC_20170412_Lights_m12573_EarthAtNight~small.mp4"
                      controls
-                     poster="./images/earth-poster-unsplash.jpg"
+                     poster="./gpt planet pngs 1024x1024/earth.png"
                   ></video>
                </div>
+               <a
+                  href="#top"
+                  id="back-to-top"
+               >
+                  <img
+                     src="./logo & icons/up-arrow.png"
+                     alt="up arrow"
+                  />Back to top
+               </a>
             </section>
             <hr />
             <section
@@ -278,10 +265,14 @@
                class="planet-section"
             >
                <div class="left-side">
-                  <img
-                     src="./gpt planet pngs/mars.png"
-                     alt="Mars"
-                  />
+                  <h3>Mars</h3>
+                  <h4>The Red Planet</h4>
+                  <ul>
+                     <li>Moons: 2 (Phobos & Deimos)</li>
+                     <li>Avg. Temp: -87 to -5°C</li>
+                     <li>Day Length: 24.6 hours</li>
+                     <li>Surface: Rocky, red dust, volcanoes</li>
+                  </ul>
                   <p>
                      Mars is the fourth planet from the Sun and is known as the “Red Planet” due to its rusty color. It has two small moons and is home to the
                      tallest volcano and deepest canyon in the solar system. Scientists are exploring Mars as a possible place for future human missions.
@@ -292,31 +283,23 @@
                      class="btn"
                      >More about Mars here</a
                   >
-                  <a
-                     href="#top"
-                     id="back-to-top"
-                  >
-                     <img
-                        src="./logo & icons/up-arrow.png"
-                        alt="up arrow"
-                     />Back to top
-                  </a>
                </div>
                <div class="right-side">
-                  <h3>Mars</h3>
-                  <h4>The Red Planet</h4>
-                  <ul>
-                     <li>Moons: 2 (Phobos & Deimos)</li>
-                     <li>Avg. Temp: -87 to -5°C</li>
-                     <li>Day Length: 24.6 hours</li>
-                     <li>Surface: Rocky, red dust, volcanoes</li>
-                  </ul>
                   <video
                      src="https://images-assets.nasa.gov/video/JPL-20210222-M2020f-0002-NASA%E2%80%99S%20Perseverance%20Rover%E2%80%99s%20First%20360%20View%20of%20Mars/JPL-20210222-M2020f-0002-NASA%E2%80%99S%20Perseverance%20Rover%E2%80%99s%20First%20360%20View%20of%20Mars~small.mp4"
                      controls
-                     poster="./images/mars-poster-unsplash.jpg"
+                     poster="./gpt planet pngs 1024x1024/mars.png"
                   ></video>
                </div>
+               <a
+                  href="#top"
+                  id="back-to-top"
+               >
+                  <img
+                     src="./logo & icons/up-arrow.png"
+                     alt="up arrow"
+                  />Back to top
+               </a>
             </section>
             <hr />
 
@@ -325,10 +308,14 @@
                class="planet-section"
             >
                <div class="left-side">
-                  <img
-                     src="./images/jupiter-v2.jpg"
-                     alt="Jupiter"
-                  />
+                  <h3>Jupiter</h3>
+                  <h4>The Giant with a Great Red Spot</h4>
+                  <ul>
+                     <li>Moons: 95 (including Ganymede)</li>
+                     <li>Avg. Temp: ~-145°C</li>
+                     <li>Atmosphere: Hydrogen & helium, no solid surface</li>
+                     <li>Day Length: ~10 hours</li>
+                  </ul>
                   <p>
                      Jupiter is the fifth planet from the Sun and the largest in our solar system. It's a gas giant, primarily composed of hydrogen and helium,
                      and is more than twice as massive as all other planets combined. Jupiter has a very thick atmosphere and a famous Great Red Spot, a giant
@@ -340,31 +327,23 @@
                      class="btn"
                      >More about Jupiter here</a
                   >
-                  <a
-                     href="#top"
-                     id="back-to-top"
-                  >
-                     <img
-                        src="./logo & icons/up-arrow.png"
-                        alt="up arrow"
-                     />Back to top</a
-                  >
                </div>
                <div class="right-side">
-                  <h3>Jupiter</h3>
-                  <h4>The Giant with a Great Red Spot</h4>
-                  <ul>
-                     <li>Moons: 95 (including Ganymede)</li>
-                     <li>Avg. Temp: ~-145°C</li>
-                     <li>Atmosphere: Hydrogen & helium, no solid surface</li>
-                     <li>Day Length: ~10 hours</li>
-                  </ul>
                   <video
                      src="https://images-assets.nasa.gov/video/GSFC_20180313_Jupiter_m12878_GreatRedSpot/GSFC_20180313_Jupiter_m12878_GreatRedSpot~orig.mp4"
                      controls
-                     poster="./images/jupiter-poster-unsplash.jpg"
+                     poster="./gpt planet pngs 1024x1024/jupiter.png"
                   ></video>
                </div>
+               <a
+                  href="#top"
+                  id="back-to-top"
+               >
+                  <img
+                     src="./logo & icons/up-arrow.png"
+                     alt="up arrow"
+                  />Back to top</a
+               >
             </section>
             <hr />
             <section
@@ -372,10 +351,14 @@
                class="planet-section"
             >
                <div class="left-side">
-                  <img
-                     src="./images/saturn-v2.jpg"
-                     alt="Saturn"
-                  />
+                  <h3>Saturn</h3>
+                  <h4>The Ringed Beauty</h4>
+                  <ul>
+                     <li>Moons: 146+ (including Titan)</li>
+                     <li>Avg. Temp: ~-178°C</li>
+                     <li>Atmosphere: Hydrogen & helium, no solid surface</li>
+                     <li>Day Length: ~10.7 hours</li>
+                  </ul>
                   <p>
                      Saturn is the sixth planet from the Sun and is best known for its stunning rings. It's a gas giant, primarily composed of hydrogen and
                      helium, and has a complex atmosphere with strong winds and storms. Saturn has numerous moons, with Titan being the largest and one of the
@@ -389,20 +372,21 @@
                   >
                </div>
                <div class="right-side">
-                  <h3>Saturn</h3>
-                  <h4>The Ringed Beauty</h4>
-                  <ul>
-                     <li>Moons: 146+ (including Titan)</li>
-                     <li>Avg. Temp: ~-178°C</li>
-                     <li>Atmosphere: Hydrogen & helium, no solid surface</li>
-                     <li>Day Length: ~10.7 hours</li>
-                  </ul>
                   <video
                      controls
                      src="https://images-assets.nasa.gov/video/GSFC_20181217_Saturn_m12672_Rings/GSFC_20181217_Saturn_m12672_Rings~orig.mp4"
-                     poster="./images/saturn-poster-unsplash.jpg"
+                     poster="./gpt planet pngs 1024x1024/saturn.png"
                   ></video>
                </div>
+               <a
+                  href="#top"
+                  id="back-to-top"
+               >
+                  <img
+                     src="./logo & icons/up-arrow.png"
+                     alt="up arrow"
+                  />Back to top</a
+               >
             </section>
             <hr />
             <section
@@ -410,10 +394,14 @@
                class="planet-section"
             >
                <div class="left-side">
-                  <img
-                     src="./images/uranus-v2.jpg"
-                     alt="Uranus"
-                  />
+                  <h3>Uranus</h3>
+                  <h4>The Tilted Ice Giant</h4>
+                  <ul>
+                     <li>Moons: 27 (including Titania)</li>
+                     <li>Avg. Temp: ~-197°C</li>
+                     <li>Atmosphere: Hydrogen, helium, and methane</li>
+                     <li>Day Length: ~17.2 hours</li>
+                  </ul>
                   <p>
                      Uranus is the seventh planet from the Sun and is unique for its tilted axis, which causes extreme seasons. It's an ice giant, primarily
                      composed of water, ammonia, and methane ices. Uranus has a faint ring system and numerous moons, with Miranda being one of the most
@@ -427,20 +415,21 @@
                   >
                </div>
                <div class="right-side">
-                  <h3>Uranus</h3>
-                  <h4>The Tilted Ice Giant</h4>
-                  <ul>
-                     <li>Moons: 27 (including Titania)</li>
-                     <li>Avg. Temp: ~-197°C</li>
-                     <li>Atmosphere: Hydrogen, helium, and methane</li>
-                     <li>Day Length: ~17.2 hours</li>
-                  </ul>
                   <video
                      controls
                      src="https://res.cloudinary.com/dtpgi0zck/video/upload/q_auto/vc_vp9/v1/videos/Uranus%20101.webm?_s=vp-2.3.4"
-                     poster="./images/uranus-poster-unsplash.jpg"
+                     poster="./gpt planet pngs 1024x1024/uranus.png"
                   ></video>
                </div>
+               <a
+                  href="#top"
+                  id="back-to-top"
+               >
+                  <img
+                     src="./logo & icons/up-arrow.png"
+                     alt="up arrow"
+                  />Back to top</a
+               >
             </section>
             <hr />
             <section
@@ -448,10 +437,14 @@
                class="planet-section"
             >
                <div class="left-side">
-                  <img
-                     src="./images/neptune-v2.jpg"
-                     alt="Neptune"
-                  />
+                  <h3>Neptune</h3>
+                  <h4>The Windy Ice Giant</h4>
+                  <ul>
+                     <li>Moons: 14 (including Triton)</li>
+                     <li>Avg. Temp: ~-214°C</li>
+                     <li>Atmosphere: Hydrogen, helium, and methane</li>
+                     <li>Day Length: ~16 hours</li>
+                  </ul>
                   <p>
                      Neptune is the eighth and farthest planet from the Sun. It's an ice giant, primarily composed of water, ammonia, and methane ices. Neptune
                      has a dynamic atmosphere with the fastest winds in the solar system and a faint ring system. Its largest moon, Triton, is geologically
@@ -465,20 +458,21 @@
                   >
                </div>
                <div class="right-side">
-                  <h3>Neptune</h3>
-                  <h4>The Windy Ice Giant</h4>
-                  <ul>
-                     <li>Moons: 14 (including Triton)</li>
-                     <li>Avg. Temp: ~-214°C</li>
-                     <li>Atmosphere: Hydrogen, helium, and methane</li>
-                     <li>Day Length: ~16 hours</li>
-                  </ul>
                   <video
                      controls
                      src="https://images-assets.nasa.gov/video/302_EyeOnNeptune/302_EyeOnNeptune~orig.mp4"
-                     poster="./images/neptune-poster-unsplash.jpg"
+                     poster="./gpt planet pngs 1024x1024/neptun.png"
                   ></video>
                </div>
+               <a
+                  href="#top"
+                  id="back-to-top"
+               >
+                  <img
+                     src="./logo & icons/up-arrow.png"
+                     alt="up arrow"
+                  />Back to top</a
+               >
             </section>
          </section>
          <hr />
@@ -486,16 +480,15 @@
             src="https://eyes.nasa.gov/apps/solar-system/#/home?embed=true"
             frameborder="0"
             title="NASA 3D Solar System"
+            id="solar-system-model"
          ></iframe>
       </main>
       <hr />
 
       <hr />
       <footer id="footer">
-         <p>
-            &copy; 2023 Planet Prosjekt. All rights reserved ( fake ). <br />
-            <a href="credits.html">Click here for credits</a>
-         </p>
+         <p>&copy; 2023 Planet Prosjekt. All rights reserved ( fake )</p>
+         <a href="credits.html">Click here for credits</a>
       </footer>
    </body>
 </html>
