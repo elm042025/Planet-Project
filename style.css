@@ -201,8 +201,11 @@ nav a img {
    height: 2.5rem;
 }
 iframe {
-   width: 100vw;
-   height: 100vh;
+   width: 90vw;
+   height: 90vh;
+   margin: 0 auto;
+   border: 2px solid #dedede;
+   border-radius: 0.5rem;
 }
 footer {
    display: flex;
@@ -211,4 +214,27 @@ footer {
 }
 footer a {
    color: #dedede;
+}
+
+/*! ---------- test vibe coded media quarry ----------  */
+@media (max-width: 768px) {
+   nav {
+      padding: 0.5rem 1rem;
+      flex-wrap: wrap;
+   }
+
+   .nav-planet img {
+      width: 2.5rem;
+   }
+
+   .hero p {
+      width: 90%;
+      padding: 0 1rem;
+   }
+
+   .planet-section {
+      flex-direction: column;
+      height: auto;
+      padding: 2rem 1rem;
+   }
 }
