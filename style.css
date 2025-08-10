@@ -8,7 +8,6 @@ html {
 }
 body {
    min-height: 100vh;
-   overflow-x: hidden;
    background-color: rgb(10, 10, 10);
    color: rgb(240, 240, 240);
    text-shadow: 2px 2px 2px rgb(15, 15, 15);
@@ -240,19 +239,44 @@ footer a {
    }
 
    .planet-section {
-      width: 100%;
-      height: auto;
+      width: 100vw;
+      height: fit-content;
       flex-direction: column;
       align-items: flex-start;
-      height: auto;
+      justify-content: flex-end;
       padding: 1rem 1rem;
       gap: 1rem;
    }
    .left-side,
    .right-side {
       width: 100%;
+      height: fit-content;
       display: flex;
       flex-direction: column;
+   }
+   .left-side {
+      height: fit-content;
+      gap: 0.5rem;
+   }
+   .left-side h3 {
+      font-size: 2rem;
+      margin-top: 7rem;
+   }
+   .left-side h4 {
+      font-size: 1.5rem;
+   }
+   .left-side ul {
+      font-size: 1rem;
+   }
+   .left-side p {
+      font-size: 1rem;
+   }
+   .left-side a {
+      margin-top: 1rem 0;
+   }
+   .right-side {
+      justify-content: flex-start;
+      height: fit-content;
    }
    .right-side video {
       width: 100%;
