@@ -201,11 +201,12 @@ nav a img {
    height: 2.5rem;
 }
 iframe {
-   width: 90vw;
-   height: 90vh;
-   margin: 0 auto;
-   border: 2px solid #dedede;
+   width: 95vw;
+   height: 95vh;
    border-radius: 0.5rem;
+   display: block;
+   margin: 0 auto;
+   box-shadow: 1px 1px 4px #2b2e35;
 }
 footer {
    display: flex;
@@ -215,26 +216,45 @@ footer {
 footer a {
    color: #dedede;
 }
-
-/*! ---------- test vibe coded media quarry ----------  */
+/*@media for mobile devices */
 @media (max-width: 768px) {
    nav {
       padding: 0.5rem 1rem;
-      flex-wrap: wrap;
+      overflow: scroll;
    }
 
    .nav-planet img {
       width: 2.5rem;
    }
-
+   #logo {
+      padding: 0 1rem;
+      margin-left: 0;
+   }
    .hero p {
       width: 90%;
       padding: 0 1rem;
    }
+   .hero h2 {
+      padding: 0 1rem;
+      margin-left: 0;
+   }
 
    .planet-section {
-      flex-direction: column;
+      width: 95%;
       height: auto;
-      padding: 2rem 1rem;
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+      padding: 1rem 1rem;
+      gap: 1rem;
+   }
+   .left-side,
+   .right-side {
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+   }
+   #back-to-top {
+      display: none;
    }
 }
