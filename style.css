@@ -223,6 +223,7 @@ footer a {
    50% {
       transform: translateX(-0.5rem);
    }
+
    100% {
       transform: translateX(0);
    }
@@ -237,7 +238,7 @@ footer a {
       letter-spacing: 0.05em;
       gap: 1.5rem;
       text-align: center;
-      animation: scrollX 2s infinite;
+      animation: scrollX 2s 2;
    }
    .hero {
       margin-top: 2rem;
