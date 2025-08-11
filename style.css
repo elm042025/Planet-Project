@@ -65,7 +65,7 @@ nav a img {
 }
 
 .hero-background {
-   background-image: radial-gradient(rgba(15, 15, 15, 0.503), rgba(0, 0, 0, 0)), url(./images/Galaxy\ background-2\ unsplash.jpg);
+   background-image: radial-gradient(rgba(15, 15, 15, 0.644), rgba(0, 0, 0, 0)), url(./images/Galaxy\ background-2\ unsplash.jpg);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
@@ -123,8 +123,7 @@ nav a img {
    padding: 5rem;
 }
 .planet-section {
-   background-image: radial-gradient(rgba(15, 15, 15, 0.873), rgba(0, 0, 0, 0.832)),
-      url(./images/milky-way-stars-starfield-backgrounds-textures-8a9bbb-1024.jpg);
+   background-image: radial-gradient(rgba(15, 15, 15, 0.75), rgba(0, 0, 0, 0.75)), url(./images/milky-way-stars-starfield-backgrounds-textures-8a9bbb-1024.jpg);
    background-size: cover;
    background-repeat: no-repeat;
 }
@@ -224,6 +223,10 @@ footer a {
       gap: 1.5rem;
       text-align: center;
    }
+   .hero {
+      margin-top: 2rem;
+      padding: 2rem 0;
+   }
 
    .nav-planet img {
       width: 4rem;
@@ -247,10 +250,12 @@ footer a {
    .hero p {
       width: 90%;
       padding: 0 1rem;
+      font-size: 1rem;
    }
    .hero h2 {
       padding: 0 1rem;
       margin-left: 0;
+      font-size: 1.5rem;
    }
 
    .planet-section {
@@ -287,7 +292,7 @@ footer a {
       font-size: 1rem;
    }
    .left-side a {
-      margin-top: 1rem 0;
+      margin: 1rem 0;
    }
    .right-side {
       justify-content: flex-start;
@@ -301,8 +306,8 @@ footer a {
       display: none;
    }
    iframe {
-      width: 90%;
-      height: 80vh;
+      width: 100%;
+      height: 75vh;
    }
    footer {
       padding: 1rem 2rem;
