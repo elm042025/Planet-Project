@@ -214,6 +214,19 @@ footer {
 footer a {
    color: #dedede;
 }
+
+/*! animation to show user that the nav is scrollable  */
+@keyframes scrollX {
+   0% {
+      transform: translateX(0);
+   }
+   50% {
+      transform: translateX(-0.5rem);
+   }
+   100% {
+      transform: translateX(0);
+   }
+}
 /*@media for mobile devices */
 @media (max-width: 768px) {
    nav {
@@ -224,6 +237,7 @@ footer a {
       letter-spacing: 0.05em;
       gap: 1.5rem;
       text-align: center;
+      animation: scrollX 2s infinite;
    }
    .hero {
       margin-top: 2rem;
