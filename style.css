@@ -12,6 +12,7 @@ body {
    color: rgb(240, 240, 240);
    text-shadow: 2px 2px 2px rgb(15, 15, 15);
    font-family: "Pathway Extreme", sans-serif;
+   overflow-x: hidden;
 }
 
 hr {
@@ -238,7 +239,10 @@ footer a {
       letter-spacing: 0.05em;
       gap: 1.5rem;
       text-align: center;
-      animation: scrollX 2s 2;
+      /* animation: scrollX 2s 2; */
+   }
+   nav a {
+      animation: scrollX 1s 2;
    }
    .hero {
       margin-top: 2rem;
