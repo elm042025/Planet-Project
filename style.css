@@ -270,11 +270,11 @@ footer a {
    .hero p {
       width: 90%;
       padding: 0 1rem;
-      font-size: 1rem;
+      font-size: 0.85rem;
    }
    .hero h2 {
-      padding: 0 1rem;
-      margin-left: 0;
+      padding: 0rem 1rem;
+      margin: 1rem 0;
       font-size: 1.25rem;
       font-weight: 500;
    }
