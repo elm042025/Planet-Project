@@ -222,7 +222,7 @@ footer a {
       transform: translateX(0);
    }
    50% {
-      transform: translateX(-5rem);
+      transform: translateX(-3rem);
    }
 
    100% {
@@ -244,7 +244,6 @@ footer a {
       animation: scrollX 1s 2;
    }
    .hero {
-      margin-top: 2rem;
       padding: 2rem 0;
    }
 
@@ -266,11 +265,12 @@ footer a {
    #logo {
       padding: 0 1rem;
       margin-left: 0;
+      margin-top: 3rem;
    }
    .hero p {
       width: 90%;
-      padding: 0 1rem;
-      font-size: 0.85rem;
+      padding: 1rem 1rem;
+      font-size: 1rem;
    }
    .hero h2 {
       padding: 0rem 1rem;
