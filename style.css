@@ -64,6 +64,9 @@ nav a img {
    color: #101010;
    text-shadow: none;
 }
+.rotates {
+   animation: rotate 5s linear 1;
+}
 
 .hero-background {
    background-image: radial-gradient(rgba(15, 15, 15, 0.644), rgba(0, 0, 0, 0)), url(./images/Galaxy\ background-2\ unsplash.jpg);
@@ -229,7 +232,20 @@ footer a {
       transform: translateX(0);
    }
 }
-/*@media for mobile devices */
+
+/*! animation for rotating elements-- now used for solar system 3D model */
+
+@keyframes rotate {
+   0% {
+      transform: rotate(0);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+/*! --------------- media queries for mobile view -------------------------------  */
+
 @media (max-width: 768px) {
    nav {
       padding: 0 0.25rem;
@@ -256,9 +272,9 @@ footer a {
    }
    .nav-planet:hover span {
       padding: 0 0.5rem;
-      background-color: #fffe9e;
+      background-color: #fffd9e00;
       border-radius: 8px;
-      color: #101010;
+      color: #ffffff;
       text-shadow: none;
       transition: 0.2s ease-in-out;
    }
