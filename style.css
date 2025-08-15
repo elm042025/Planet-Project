@@ -185,7 +185,7 @@ nav a img {
    box-shadow: 1px 1px 4px #2b2e35;
 }
 
-#back-to-top {
+.back-to-top {
    background-color: rgba(0, 0, 0, 0);
    display: flex;
    flex-direction: column;
@@ -198,7 +198,7 @@ nav a img {
    text-decoration: none;
 }
 
-#back-to-top img {
+.back-to-top img {
    width: 2.5rem;
    height: 2.5rem;
 }
@@ -340,7 +340,7 @@ footer a {
       width: 100%;
       height: auto;
    }
-   #back-to-top {
+   .back-to-top {
       display: none;
    }
    iframe {
