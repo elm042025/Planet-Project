@@ -248,7 +248,7 @@ footer a {
 
 @media (max-width: 768px) {
    nav {
-      padding: 0 0.25rem;
+      padding: 0.5rem;
       overflow: scroll;
       font-size: 0.75rem;
       font-weight: 600;
